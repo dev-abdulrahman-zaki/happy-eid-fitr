@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Kufam:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+body {
+  font-family: "Almarai", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#root {
+  background-color: #00bb77;
+  background-image: url("./assets/imgs/bg.svg");
+  min-height: 100vh;
+}
+h1 {
+  font-family: "Kufam", sans-serif;
+  font-weight: 700;
+}
+.festive-animation {
+  animation-name: bounce;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+.fa-quote-right {
+  font-size: 27px;
+  margin-top: -20px;
+}
+.sec-title {
+  color: #00a651;
+  font-family: "Kufam", sans-serif;
+}
+.sec-title h2 {
+  text-shadow: 1px 1px 1px #00000044;
+}
+
+.countdown-num {
+  font-size: 100px;
+  font-weight: 700;
+  padding: 10px;
+}
+@media (max-width: 450px) {
+  .countdown-num {
+    font-size: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .countdown-num {
+    font-size: 25px;
+  }
+}
+@media (max-width: 360px) {
+  .countdown-num {
+    font-size: 20px;
+  }
+}
+.countdown-txt {
+  font-size: 20px;
+  margin-top: 5px;
+  width: inherit;
+  font-weight: 700;
+}
+@media (max-width: 400px) {
+  .countdown-txt {
+    font-size: 16px;
+  }
+}
+@media (max-width: 360px) {
+  .countdown-txt {
+    font-size: 13px;
+  }
+}
+.countdown-span {
+  width: 100%;
+}
+.countdown-day {
+  color: #7be1a6;
+}
+
+.numOfPeople-label {
+  font-size: 17.5px;
+}
+.zakat-amount {
+  font-family: "Kufam", sans-serif;
+  font-weight: 700;
+}
+
+.accordion-button:focus {
+  border-color: #7be1a6 !important;
+  box-shadow: none !important;
+}
+.accordion-item .accordion-button {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+  text-shadow: 1px 1px 1px #00000015;
+  font-family: "Kufam", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+}
+.accordion-body {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #00a651 !important;
+  color: white !important;
+}
+.accordion-item .accordion-button.collapsed {
+  color: #039147 !important;
+}
+
+/* copyright */
+#footer {
+  padding-top: 100px !important;
+}
+.copyright {
+  width: fit-content !important;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.icons-version-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.icons-box {
+  display: flex;
+  align-items: center;
+}
+.icons-box a {
+  display: block;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.icons-box a i {
+  vertical-align: middle !important;
+}
+.icons-box a:not(:first-child) {
+  margin-right: 8px;
+}
+.icons-box img {
+  height: 25px;
+  border-radius: 6px;
+}
+.icons-box a:hover img,
+.icons-box a:hover i {
+  transform: scale(1.1);
+}
+.copyright .fa-heart {
+  color: rgb(186, 73, 73);
+}
+.copyright > span {
+  font-size: 14px !important;
+}
+
+/* ========= GreetingCard ======== */
+.GreetingCard {
+  font-family: "Cairo", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .GreetingCard {
+    display: none;
+  }
+}
+.GreetingCard .Meta {
+  flex-grow: 1;
+  padding-right: 15px;
+}
+.GreetingCard #certificateWrapper {
+  box-shadow: 0 0 5px #000;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 530px;
+  height: 600px;
+}
+.GreetingCard #certificateWrapper img {
+  display: block;
+}
+.GreetingCard #certificateWrapper p {
+  font-family: "Cairo", sans-serif;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: absolute;
+  /* left: 390px; */
+  bottom: 129px;
+  font-size: 17pt;
+  color: white;
+  font-weight: 600;
+  width: 380px;
+  /* overflow: hidden; */
+}
+/* Styles for screens larger than 600px */
+#sorry-GreetingCard {
+  display: none; /* or any other desired display property */
+}
+@media (max-width: 600px) {
+  #sorry-GreetingCard {
+    display: block; /* or any other desired display property */
+    color: red;
+  }
+}
